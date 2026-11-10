@@ -1,0 +1,11 @@
+# Snyk policy file
+version: v1.25.0
+ignore:
+  SNYK-JS-MARSDB-480405:
+    - '*':
+        reason: 'Unmaintained legacy library (marsdb) - sengaja dipertahankan sebagai target tantangan CTF aplikasi'
+        expires: 2026-12-31T00:00:00.000Z
+  SNYK-JS-NOTEVIL-2385946:
+    - '*':
+        reason: 'Dev-only sandbox execution dependency - tidak diekspos ke lingkungan produksi'
+        expires: 2026-12-31T00:00:00.000Z
